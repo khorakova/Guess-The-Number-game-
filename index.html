@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guess the number</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tomorrow:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="game.js"></script>
+  </head>
+
+  <body>
+    <h1 class="title">Can you guess the secret number?</h1>
+
+    <section class="main">
+      <div class="white-box">
+        <h2>HOW TO PLAY</h2>
+        <ul>
+          <li>Guess the secret number between 0 and 100.</li>
+          <li>If you guess incorrect number, you will get a hint.</li>
+          <li>If you guess correct number, you</li>
+        </ul>
+      </div>
+
+      <div class="white-box">
+        <h2>SECRET NUMBER</h2>
+        <div class="number-bar">
+          <p class="number right-align lowest-number">0</p>
+          <p>&lt;</p>
+          <div class="star-box">
+            <img class="star" src="images/star.svg" alt="green star" />
+            <p class="question-mark">?</p>
+          </div>
+          <p>&lt;</p>
+          <p class="number highest-number">100</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="bottom-box">
+      <h2>Number between 0 and 100:</h2>
+      <form class="guess-form">
+        <input
+          required
+          placeholder="55"
+          type="number"
+          min="1"
+          max="99"
+          class="input-number form-font"
+        />
+        <button class="guess-button form-font" type="submit">GUESS</button>
+        <button class="play-again-button form-font" type="button">PLAY AGAIN</button>
+      </form>
+    </div>
+
+  </body>
+</html>
